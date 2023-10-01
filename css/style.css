@@ -79,8 +79,26 @@ body{
     transition: var(--transition);
     
 }
-.header_contact ul li a:hover{
+.header_contact ul li a:hover,
+.header_contact select:hover{
     color: var(--secondary-clr);
+}
+.header_login select{
+    background-color: transparent;
+    border: none;
+    color: var(--white-clr);
+    font-size: 14px;
+    transition: var(--transition);
+}
+.header_login select:focus-visible{
+    border: none;
+    outline: none;
+}
+.header_login select option{
+    color: var(--text-clr);
+    transition: var(--transition);
+    padding: 10px 150px 10px 20px;
+    
 }
 header{
     background: transparent;
@@ -146,7 +164,8 @@ nav form {
 nav form span i{
     font-size: 25px;
     color: var(--white-clr);
-    font-weight: 300;    
+    font-weight: 300;
+    cursor: pointer;  
 }
 nav form .common_btn{
     background-color: transparent;
@@ -190,11 +209,89 @@ nav form .common_btn:hover::before{
     font-weight: 300;
     line-height: 29px;
 }
-
 /* ===== banner css end here ===== */
 
-/* ===== navbar css start here ===== */
-/* ===== navbar css end here ===== */
+/* ===== categories css start here ===== */
+
+#categories .categories_wrapper{
+    background-color: var(--white-clr);
+    padding: 30px 20px 30px 20px;
+    border-radius: 30px;
+    box-shadow: 4px 14px 28px rgba(0, 0, 0, 0.1);
+    margin-top: -120px;
+}
+#categories button{
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--secondary-clr);
+    border: 1px solid var(--btn-clr);
+}
+#categories button i{
+    margin-right: 5px;
+}
+
+#categories button.active{
+    background-color: var(--btn-clr);
+    color: var(--white-clr);
+}
+
+.single_content{
+    padding: 15px 30px 10px 20px;
+    background-color: #F5EDFD;
+    border-radius: 10px;
+    position: relative;
+    width: 25%;
+}
+.single_content:nth-child(3){
+    width: 40%;
+}
+.single_content:nth-child(4){
+    width: 20%;
+}
+.single_content span{
+    position: absolute;
+    top: 50%;
+    right: -38px;
+    transform: translateY(-50%);
+    z-index: 111;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #F5EDFD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid var(--white-clr);
+}
+.single_content .content_heading label{
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 14px;
+    color: #818090;
+}
+.single_content input{
+    outline: none;
+    border: none;
+    padding: 10px 0;
+    background-color: transparent;
+}
+.single_content input::placeholder,
+.single_content h4{
+    font-weight: 500;
+    font-size: 22px;
+    color: var(--text-clr);
+}
+.single_content h4{
+    padding: 10px 0;
+
+}
+.single_content p{
+    font-weight: 400;
+    font-size: 12px;
+    color: #212529;
+}
+
+/* ===== categories css end here ===== */
 
 /* ===== navbar css start here ===== */
 /* ===== navbar css end here ===== */
