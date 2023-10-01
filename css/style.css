@@ -137,12 +137,16 @@ header{
     width: 0;
     height: 2px;
     background-color: var(--white-clr);
-    bottom: -2px;
-    left: 0;
-    transition: var(--transition);
+    right:0;
+    bottom:-2px;
+    left: auto;
+    transition:all .5s linear;
+    
 }
 .navbar-nav .nav-item .nav-link:hover::before{
     width: 100%;
+    right: auto;
+    left: 0;
 }
 .navbar-nav .nav-item .dropdown-menu{
     margin-top: 20px;
@@ -220,17 +224,17 @@ nav form .common_btn:hover::before{
     box-shadow: 4px 14px 28px rgba(0, 0, 0, 0.1);
     margin-top: -120px;
 }
-#categories button{
+#categories .categories_btn_common{
     font-weight: 400;
     font-size: 16px;
     color: var(--secondary-clr);
     border: 1px solid var(--btn-clr);
 }
-#categories button i{
+#categories .categories_btn_common i{
     margin-right: 5px;
 }
 
-#categories button.active{
+#categories .categories_btn_common.active{
     background-color: var(--btn-clr);
     color: var(--white-clr);
 }
@@ -262,6 +266,8 @@ nav form .common_btn:hover::before{
     align-items: center;
     justify-content: center;
     border: 3px solid var(--white-clr);
+    color: var(--btn-clr);
+    font-size: 22px;
 }
 .single_content .content_heading label{
     font-family: var(--secondary-font);
@@ -274,6 +280,7 @@ nav form .common_btn:hover::before{
     border: none;
     padding: 10px 0;
     background-color: transparent;
+    font-size: 22px;
 }
 .single_content input::placeholder,
 .single_content h4{
@@ -289,6 +296,14 @@ nav form .common_btn:hover::before{
     font-weight: 400;
     font-size: 12px;
     color: #212529;
+}
+.categories_btn {
+    display: flex;
+    justify-content: center;
+}
+.categories_btn .common_btn{
+    margin: 0 auto;
+    margin-top: 30px;
 }
 
 /* ===== categories css end here ===== */

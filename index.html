@@ -297,7 +297,7 @@
                         >
                             <li class="nav-item" role="presentation">
                                 <button
-                                    class="nav-link active"
+                                    class="nav-link active categories_btn_common"
                                     id="pills-flights-tab"
                                     data-bs-toggle="pill"
                                     data-bs-target="#pills-flights"
@@ -312,7 +312,7 @@
                             </li>
                             <li class="nav-item" role="presentation">
                                 <button
-                                    class="nav-link"
+                                    class="nav-link categories_btn_common"
                                     id="pills-tours-tab"
                                     data-bs-toggle="pill"
                                     data-bs-target="#pills-tours"
@@ -326,7 +326,7 @@
                             </li>
                             <li class="nav-item" role="presentation">
                                 <button
-                                    class="nav-link"
+                                    class="nav-link categories_btn_common"
                                     id="pills-hotels-tab"
                                     data-bs-toggle="pill"
                                     data-bs-target="#pills-hotels"
@@ -340,7 +340,7 @@
                             </li>
                             <li class="nav-item" role="presentation">
                                 <button
-                                    class="nav-link"
+                                    class="nav-link categories_btn_common"
                                     id="pills-visa-tab"
                                     data-bs-toggle="pill"
                                     data-bs-target="#pills-visa"
@@ -354,7 +354,7 @@
                             </li>
                             <li class="nav-item" role="presentation">
                                 <button
-                                    class="nav-link"
+                                    class="nav-link categories_btn_common"
                                     id="pills-apartments-tab"
                                     data-bs-toggle="pill"
                                     data-bs-target="#pills-apartments"
@@ -369,7 +369,7 @@
                             </li>
                             <li class="nav-item" role="presentation">
                                 <button
-                                    class="nav-link"
+                                    class="nav-link categories_btn_common"
                                     id="pills-bus-tab"
                                     data-bs-toggle="pill"
                                     data-bs-target="#pills-bus"
@@ -383,7 +383,7 @@
                             </li>
                             <li class="nav-item" role="presentation">
                                 <button
-                                    class="nav-link"
+                                    class="nav-link categories_btn_common"
                                     id="pills-cruise-tab"
                                     data-bs-toggle="pill"
                                     data-bs-target="#pills-cruise"
@@ -405,6 +405,72 @@
                                 id="pills-flights"
                                 role="tabpanel"
                                 aria-labelledby="pills-flights-tab"
+                                tabindex="0"
+                            >
+                                <div class="tab_content d-flex gap-lg-4">
+                                    <div class="single_content">
+                                        <div
+                                            class="content_heading d-flex justify-content-between"
+                                        >
+                                            <label for="">From</label>
+                                            <i
+                                                class="fa-solid fa-plane-departure"
+                                            ></i>
+                                        </div>
+                                        <input
+                                            type="text"
+                                            placeholder="Dhaka"
+                                        />
+                                        <p>
+                                            JFK - John F. Kennedy International...
+                                        </p>
+                                        <span>
+                                            <i
+                                                class="fa-solid fa-right-left"
+                                            ></i>
+                                        </span>
+                                    </div>
+                                    <div class="single_content">
+                                        <div
+                                            class="content_heading d-flex justify-content-between"
+                                        >
+                                            <label for="">To</label>
+                                            <i
+                                                class="fa-solid fa-plane-arrival"
+                                            ></i>
+                                        </div>
+                                        <input
+                                            type="text"
+                                            placeholder="Canada"
+                                        />
+                                        <p>LCY, London city airport</p>
+                                    </div>
+                                    <div class="single_content">
+                                        <div class="content_heading">
+                                            <label for="">Journey date</label>
+                                        </div>
+                                        <input type="date" value="2023-10-01" />
+                                        
+                                        <p>
+                                            Thursday
+                                        </p>
+                                    </div>
+                                    <div class="single_content">
+                                        <div class="content_heading">
+                                            <label for=""
+                                                >Passenger, Class</label
+                                            >
+                                        </div>
+                                        <h4>0 Passenger</h4>
+                                        <p>Business</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="tab-pane fade"
+                                id="pills-tours"
+                                role="tabpanel"
+                                aria-labelledby="pills-tours-tab"
                                 tabindex="0"
                             >
                                 <div class="tab_content d-flex gap-lg-4">
@@ -450,7 +516,7 @@
                                         <div class="content_heading">
                                             <label for="">Journey date</label>
                                         </div>
-                                        <input type="date" value="01-10-23" />
+                                        <input type="date" value="2023-10-01" />
                                         
                                         <p>
                                             JFK - John F. Kennedy
@@ -468,35 +534,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <div
-                                class="tab-pane fade"
-                                id="pills-profile"
-                                role="tabpanel"
-                                aria-labelledby="pills-profile-tab"
-                                tabindex="0"
-                            >
-                                ...
-                            </div>
-                            <div
-                                class="tab-pane fade"
-                                id="pills-contact"
-                                role="tabpanel"
-                                aria-labelledby="pills-contact-tab"
-                                tabindex="0"
-                            >
-                                ...
-                            </div>
-                            <div
-                                class="tab-pane fade"
-                                id="pills-disabled"
-                                role="tabpanel"
-                                aria-labelledby="pills-disabled-tab"
-                                tabindex="0"
-                            >
-                                ...
-                            </div>
                         </div>
                     </div>
+                    <div class="categories_btn">
+                        <button class="btn common_btn" type="submit">Search</button>
+                    </div>
+                    
                 </div>
             </div>
         </section>
